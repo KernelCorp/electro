@@ -56,7 +56,7 @@ table{ border-collapse:collapse;}
 #header .searchForm input[type="submit"]{ float:right; text-indent:-9999px; width:16px; height:16px; cursor:pointer; border:none; background:url(../img/search-submit.png) 0 0 no-repeat}
 #header .callLink{ float:left; height:20px; font-size:12px; line-height:23px; color:#858585; font-style:italic; cursor:pointer; padding:0 23px 0 0; margin:9px 0 0; background:url(../img/call-button-icon.png) 100% 1px no-repeat}
 #header .email{ float:right; height:21px; padding:0 25px 0 0; margin:9px 0 0; font-size:12px; line-height:23px; color:#858585; font-style:italic; text-decoration:none; background:url(../img/email-icon.png) 100% 5px no-repeat}
-#header .center{ position:relative; margin:0 324px 0 300px; padding:47px 0 0; text-align:right;}
+#header .center{ position:relative; margin:0 324px 0 20px; padding:47px 0 0; text-align:right;}
 #header .org{ font-size:26px; line-height:1; color:#8c8c8c; font-weight:bold; text-transform:uppercase; text-shadow:0 -1px 0 #696969,0 1px 5px #FFF; -moz-text-shadow:0 -1px 0 #696969,0 1px 5px #FFF; -webkit-text-shadow:0 -1px 0 #696969,0 1px 5px #FFF;}
 #header .phone{ padding:7px 0 0; line-height:18px; color:#8c8c8c; font-weight:bold; text-shadow:0 -1px 0 #696969,0 1px 5px #FFF; -moz-text-shadow:0 -1px 0 #696969,0 1px 5px #FFF; -webkit-text-shadow:0 -1px 0 #696969,0 1px 5px #FFF;}
 
@@ -133,6 +133,7 @@ table{ border-collapse:collapse;}
     width:268px; 
     background: url(../img/sidebar-bg.png) repeat;
     min-height: 100%;
+    height: 1200px;
     }
 
 .inner{ position:relative; margin:0 0 0 288px;}
@@ -143,9 +144,19 @@ table{ border-collapse:collapse;}
 
 .promo .item {
     float: left;
-    width: 33%;
+    width: 32%;
     margin-bottom: 38px;
     }
+.promo .item.indent {margin-left: 13px;}  
+.promo .image img {
+    border: 5px solid #dfdfdf;
+     -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Параметры тени */
+    width: 200px;
+    height: 178px;
+    }
+
 .name {height: 60px;}
 
 .title1 {
@@ -283,7 +294,7 @@ table{ border-collapse:collapse;}
 
 .pull-right {float: right !important; margin: 20px 0 20px 0;}
 
-.slide {width: 962px; height: 284px;}
+
 
 .sidebarFooter {
     font-size: 12px;
@@ -345,3 +356,46 @@ table{ border-collapse:collapse;}
   .magnaweb img {float: right;}
   .slogan { margin-top: -15px; text-align: right;}
   
+  .dscr a { margin-left: 10px;}
+  
+  .promo .name {
+    vertical-align: middle; 
+    display: table-cell; 
+    text-align: center;
+    width: 210px;
+    }
+  .promo .name a {	  
+    font-size: 18px;
+	  color: #8c8c8c;
+	  text-shadow: 0 1px 5px rgba(1,1,1,.25);
+	  text-decoration: none;
+	  }
+  .slider {margin-left: -20px; height: 280px;}
+  .slide { width: 962px; height: 280px;}
+  
+  .overBlock {position: relative; margin-top: -173px; }
+  .slider .line{
+    background-color: #000;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE 5.5+*/
+    -moz-opacity: 0.5; /* Mozilla 1.6 и ниже */
+    -khtml-opacity: 0.5; /* Konqueror 3.1, Safari 1.1 */
+    opacity: 0.5; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */
+    zoom: 1; /* для элемента в ИЕ, у которого не заданы width и height */
+    height: 66px; 
+    width: 100%;     
+    }
+    
+  .slider .dscr {
+    height: 66px; 
+    position: absolute;
+    top: 0;
+    width: 100%; 
+    text-align: center;
+    }
+    
+  .slider .prev { float: left; margin-left: 20px; cursor: pointer;}
+  .slider .next { float: right; margin-right: 20px; cursor: pointer;}
+  
+  .slide-dscr {margin-top: 27px;}
+  .slider .prev {margin-top: 15px;}
+  .slider .next {margin-top: 13px;}
