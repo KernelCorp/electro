@@ -1,0 +1,7 @@
+.mapBlock .point,.mapBlock .point .info{ behavior:url(./pie/PIE.htc);}
+.slider{ overflow:hidden;}
+.slider .overBlock .item img{ width:1020px; height:533px; }
+.tabs li{ margin-right:30px;}
+.pager .first,.pager .last,.pager .prev,.pager .next,.sections .item{ display:inline; zoom:1;}
+.sections .item{ margin-right:20px;}
+.contactsList .item .map{ zoom:1;}
