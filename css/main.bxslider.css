@@ -257,14 +257,16 @@
 #top-gallery .item .text-line .text-gradient
 {
 	position: relative;
+	color: transparent;	
 	/*background: linear-gradient(to bottom, #eec72f, #e6b42a);*/
-	background: -o-linear-gradient(top,#eec72f 0%,#dd9f25 100%);, #e6b42a;
-	background: -moz-linear-gradient(top,#eec72f 0%,#dd9f25 100%);, #e6b42a;
-	background: -webkit-linear-gradient(top,#eec72f 0%,#dd9f25 100%);, #e6b42a;
+	background: -o-linear-gradient(top,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 100%);, #eec72f;
+	background: -moz-linear-gradient(top,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 100%);, #eec72f;
+	background: -webkit-linear-gradient(top,#eec72f 0%,#dd9f25 100%);, #eec72f;
+	background: linear-gradient(top,#eec72f 0%,#dd9f25 100%);, #eec72f;
 	-o-background-clip: text;
 	-moz-background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;	
+	-webkit-background-clip: text;	
+	background-clip: text;	
 	margin-top: -20px;
 }
 
