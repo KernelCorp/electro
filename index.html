@@ -5,6 +5,7 @@
 <title>Главная</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" href="css/main.bxslider.css" type="text/css" />
 <!--[if IE]>
 <link rel="stylesheet" type="text/css" href="css/styleIE.css"/>
 <![endif]-->
@@ -13,6 +14,8 @@
 <![endif]-->
 <script type="text/javascript" src="js/jquery_and_plugins.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+
 </head>
 <body>
  
@@ -142,18 +145,45 @@
 		</div><!-- /sidebar -->
 		
 		<div class="inner">
-			<div class="slider">
-					<div class="item">
-						<img src="img/slide.png" alt="" title="" class="slide"/>
-                        <div class="overBlock">
-                        <div class="line"></div>
-						<div class="dscr">
-                            <div class="prev"><span class="icon"><img src="img/arr-l1.png" alt="" title="" /></span></div>
-                            <img src="img/slide-dscr.png" alt="" title="" class="slide-dscr"/>
-                            <div class="next"><span class="icon"><img src="img/arr-r1.png" alt="" title="" /></span></div>
+			<div class='bx-top-gallery'>
+				<ul id='top-gallery'>
+					<li>
+						<div class="item">
+							<img src="img/slide.png" alt="" title="" />
+							<div class='text-line'>
+								<div class='text-shadow'>Электромонтажные работы любой сложности</div>
+								<div class='text-gradient'>Электромонтажные работы любой сложности</div>
+							</div>
 						</div>
-					    </div>
-				    </div>
+					</li>
+					<li>
+						<div class="item">
+							<img src="img/slide.png" alt="" title="" />
+							<div class='text-line'>
+								<div class='text-shadow'>Электромонтажные работы любой сложности 2</div>
+								<div class='text-gradient'>Электромонтажные работы любой сложности 2</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<img src="img/slide.png" alt="" title="" />
+							<div class='text-line'>
+								<div class='text-shadow'>Электромонтажные работы любой сложности 3</div>
+								<div class='text-gradient'>Электромонтажные работы любой сложности 3</div>
+							</div>
+						</div>
+					</li>
+					
+				</ul>
+				
+				<script type="text/javascript">
+					$(document).ready(function(){
+						$('#top-gallery').bxSlider({						
+						controls: true
+						});
+					});
+				</script>
 			</div>
 			<div class="promo">
 				<div class="item">

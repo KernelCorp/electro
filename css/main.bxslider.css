@@ -22,7 +22,7 @@
 }
 
 .bx-wrapper img {
-	max-width: 100%;
+	width: 100%;
 	display: block;
 	margin: 0 auto;
 }
@@ -32,14 +32,14 @@
 
 .bx-wrapper .bx-viewport {
 	vertical-align: middle;
-	border: 8px solid #dadad9;
-	margin-left: -8px;
-	margin-right: -10px;
+	border: none;
+	margin-left: 0;
+	margin-right: 0;
 	
-	-o-box-shadow: 0 2px 5px #888; 
-	-moz-box-shadow: 0 2px 5px #888; 
-	-wekit-box-shadow: 0 2px 5px #888; 
-	box-shadow: 0 2px 5px #888; 
+	-o-box-shadow: none; 
+	-moz-box-shadow: none; 
+	-wekit-box-shadow: none; 
+	box-shadow: none; 
 }
 /*
 .bx-wrapper .bx-pager,
@@ -60,6 +60,11 @@
 	top: 0;
 	left: 0;
 	z-index: 2000;
+}
+
+.bx-top-gallery 
+{
+	margin-left: -20px;
 }
 
 /* PAGER */
@@ -92,7 +97,6 @@
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-	background-image: url('../img/main_page_navigation.png');
 	text-indent: -9999px;
 	display: block;
 	width: 20px;
@@ -126,12 +130,12 @@
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(img/controls.png) no-repeat 0 -32px;
+	background: url(../img/arr-l1.png) no-repeat 0 0;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(img/controls.png) no-repeat -43px -32px;
+	background: url(../img/arr-r1.png) no-repeat 0 0;
 }
 
 .bx-wrapper .bx-prev:hover {
@@ -139,16 +143,16 @@
 }
 
 .bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
+	background-position: 0 0;
 }
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
 	top: 50%;
-	margin-top: -16px;
+	margin-top: -43px;
 	outline: 0;
-	width: 32px;
-	height: 32px;
+	width: 27px;
+	height: 37px;
 	text-indent: -9999px;
 	z-index: 9999;
 }
@@ -223,3 +227,45 @@
 	font-size: .85em;
 	padding: 10px;
 }
+
+#top-gallery .item
+{
+	height: 280px;
+}
+
+#top-gallery .item .text-line
+{
+	position: relative;
+	padding-top: 24px;
+	height: 44px;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top: -180px;
+	color: #eec72f;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+#top-gallery .item .text-line .text-shadow
+{
+	text-shadow: 0 -1px 0px #fff, 0 1px 0px #000;
+	
+}
+
+#top-gallery .item .text-line .text-gradient
+{
+	position: relative;
+	/*background: linear-gradient(to bottom, #eec72f, #e6b42a);*/
+	background: -o-linear-gradient(top,#eec72f 0%,#dd9f25 100%);, #e6b42a;
+	background: -moz-linear-gradient(top,#eec72f 0%,#dd9f25 100%);, #e6b42a;
+	background: -webkit-linear-gradient(top,#eec72f 0%,#dd9f25 100%);, #e6b42a;
+	-o-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;	
+	margin-top: -20px;
+}
+
+
+
