@@ -236,20 +236,21 @@
 #top-gallery .item .text-line
 {
 	position: relative;
-	padding-top: 24px;
+	padding-top: 26px;
 	height: 44px;
 	background-color: rgba(0, 0, 0, 0.6);
 	margin-top: -180px;
 	color: #eec72f;
-	font-size: 24px;
+	font-size: 15px;
 	font-weight: bold;
 	text-align: center;
-	
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 #top-gallery .item .text-line .text-shadow
 {
-	text-shadow: 0 -1px 0px #fff, 0 1px 0px #000;
+	text-shadow: 0 -1px 0 #fff, 0 1px 1px #000;
 	
 }
 
