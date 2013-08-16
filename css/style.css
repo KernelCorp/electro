@@ -280,6 +280,9 @@ table{ border-collapse:collapse;}
     float: left;
     margin-left: 14px;
     margin-top: 13px;
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Параметры тени */
     }
 
 .gallery {padding-left: 6px;}
@@ -352,8 +355,9 @@ table{ border-collapse:collapse;}
     
   #footer .nav {margin-left: 40px; margin-top: -20px;}
   
+  .magnaweb {text-align: right;}
   .magnaweb a {color: #4d90cf; text-align: right;}
-  .magnaweb img {float: right;}
+  .magnaweb img {}
   .slogan { margin-top: -15px; text-align: right;}
   
   .dscr a { margin-left: 10px;}
@@ -370,32 +374,261 @@ table{ border-collapse:collapse;}
 	  text-shadow: 0 1px 5px rgba(1,1,1,.25);
 	  text-decoration: none;
 	  }
-  .slider {margin-left: -20px; height: 280px;}
-  .slide { width: 962px; height: 280px;}
   
-  .overBlock {position: relative; margin-top: -173px; }
-  .slider .line{
-    background-color: #000;
-    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE 5.5+*/
-    -moz-opacity: 0.5; /* Mozilla 1.6 и ниже */
-    -khtml-opacity: 0.5; /* Konqueror 3.1, Safari 1.1 */
-    opacity: 0.5; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */
-    zoom: 1; /* для элемента в ИЕ, у которого не заданы width и height */
-    height: 66px; 
-    width: 100%;     
+.prod-img {
+    float: left;
+    width: 290px;
+    }
+.prod-img img {
+     border: 5px solid #dfdfdf;
+     -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Параметры тени */
+    }  
+    
+.prod-text {
+    float: left;
+    margin-left: 30px;
+    width: 350px;
     }
     
-  .slider .dscr {
-    height: 66px; 
-    position: absolute;
-    top: 0;
-    width: 100%; 
-    text-align: center;
+.prod-text .name {
+    width: 330px;
+    font-size: 12px;
+	  font-weight: bold;
+	  color: #fff;
+	  padding-left: 20px;
+	  background-color: #89a8c3;
+	  line-height: 27px;
+	  height: 27px;
     }
     
-  .slider .prev { float: left; margin-left: 20px; cursor: pointer;}
-  .slider .next { float: right; margin-right: 20px; cursor: pointer;}
+.prod-text .company {
+    width: 315px;
+    font-size: 12px;
+	  font-weight: bold;
+	  color: #8c8c8c;
+	  padding-left: 20px;
+	  padding-right: 15px;
+	  background-color: #dedddb;
+	  line-height: 27px;
+	  height: 27px;
+	  }
+
+.prod-text p {margin-top: 15px;}	
+.mrgn-top {margin-top: 20px;}  
+
+/* --------------------карусель------------------------------- */
+
+.thumbs {width:290px; height:400px; position:relative; margin: 0; z-index:100;}
+.thumbs img {    
+    -moz-box-shadow:none;
+    -webkit-box-shadow: none;
+    box-shadow:none;
+    }
+.thumbs input {position:absolute; left:-9999px;}
+.thumbs label {display:block; width:90px; height:120px; float:left; background-repeat: no-repeat;}
+.thumbs label.c1 {margin-right:10px;}
+.thumbs label.r1,
+.thumbs label.r2,
+.thumbs label.r3,
+.thumbs label.r4 {margin-bottom:10px;}
+ 
+.thumbs label img {display:block; width:80px; height:55px; position:absolute; z-index:-1;
+-webkit-transition:1s;
+-moz-transition:1s;
+-ms-transition:1s;
+-o-transition:1s;
+transition:1s;
+}
+ 
+.thumbs .c1 img {left:0;}
+.thumbs .c2 img {left:100px;}
+.thumbs .c3 img {left:200px;}
+.thumbs .r1 img {top:256px;}
+
+ 
+.b1, 
+.b2,
+.b3 {
+    padding: 0; 
+    margin-top:256px; 
+    display:block; 
+    width:80px; 
+    height:55px; 
+    border: 5px solid #dfdfdf; 
+    float: left;
+}
+.b2, .b3 {margin-left: 10px;}
+ 
+#thumb1:checked ~ .t1 img,
+#thumb2:checked ~ .t2 img,
+#thumb3:checked ~ .t3 img
+ {z-index:100;}
+ 
+#thumb1:checked ~ .t1 img,
+#thumb2:checked ~ .t2 img,
+#thumb3:checked ~ .t3 img
+ {left: 0; top:0; width: 280px; height:236px;
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Для Firefox */
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Параметры тени */
+  }
+ 
+
+ 
+/* -------------------------------------------------------------- */
+
+.map {
+    width: 372px;
+    border: 4px solid #dfdfdf;
+    height: 272px;
+    margin: 30px 30px 30px 0;
+    float: left;
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Параметры тени */
+    }
+    
+.contacts-phone {
+    float: left;
+    margin-top: 30px;
+    height: 272px;
+    }
+
+.contacts-phone p {margin-top: 0; margin-bottom: 20px;} 
+    
+.contacts-phone h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+	  font-size: 14px;
+	  font-weight: bold;
+	  color: #8c8c8c;
+	  text-shadow: 0 1px 5px rgba(1,1,1,.25);
+	  line-height: 14px;
+	  margin-bottom: 10px;
+	  }
+
+.contacts-form {width: 100%; margin-top: 340px;}
+
+.contacts-form form {
+  background-color: #dddddb;
+  width: 380px;
+  margin: 0 0 0 0;
+  padding: 0;
+  float: left;
+  }
   
-  .slide-dscr {margin-top: 27px;}
-  .slider .prev {margin-top: 15px;}
-  .slider .next {margin-top: 13px;}
+.contacts-form input {
+  background: url(../img/body-bg.png);
+  border: none;
+  width: 338px;
+  margin-left: 16px;
+  margin-bottom: 13px;
+  height: 20px;
+  padding: 0 5px;
+  }
+  
+.contacts-form label {margin-left: 15px;}
+
+.contacts-form legend {
+  background-color: #89a8c3;
+  padding: 9px 15px 7px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  width: 350px;
+  margin-bottom: 13px;
+  }
+  
+.contacts-form textarea {
+  background: url(../img/body-bg.png);
+  border: none;
+  width: 338px;
+  margin: 0 16px;
+  height: 66px;
+  padding: 5px;
+  overflow: auto;
+  }
+  
+.contacts-form button {
+  font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 1px #d17a10;
+	margin: 10px 15px;
+	padding: 8px 15px;
+	border: 1px solid #c1aa28;
+	background: #f4d632;
+  background: -moz-linear-gradient(top, #f4d632, #dc9e25);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4d632), color-stop(100%,#dc9e25));
+  background: -webkit-linear-gradient(top, #f4d632, #dc9e25);
+  background: -o-linear-gradient(top, #f4d632, #dc9e25);
+  background: -ms-linear-gradient(top, #f4d632, #dc9e25);
+  background: linear-gradient(top, #f4d632, #dc9e25);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+	}
+	
+.contacts-text {
+  float: left;
+  margin-left: 20px;
+  width: 252px;
+  }
+ 
+.warning {
+  color: red;
+  margin: 0 15px;
+  padding: 0;
+  }  
+.contacts-text p { padding: 0 0 20px 0;}
+
+.white_fon
+{
+	background-color: #fff;
+	display: none;
+	height: 100%;
+	left: 0;
+	opacity: 0.8;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 101;
+}
+
+.popover_block
+{	
+	background-color: #fff;
+	display: none;
+	
+	-o-box-shadow: 0 0 15px #000;
+	-moz-box-shadow: 0 0 15px #000;
+	-webkit-box-shadow: 0 0 15px #000;
+	box-shadow: 0 0 15px #000;
+	
+	position: absolute;
+	top: 100px;
+	width: 380px;
+	left: 50%;
+	padding: 0;
+	margin-left: -190px;
+	z-index: 102;
+}
+
+.popover_block  .contacts-form
+{
+	margin-top: 0px
+}
+
+.popover_block .close-button
+{
+	position: relative;
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: -30px;
+	cursor: pointer;
+}

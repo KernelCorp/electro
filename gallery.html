@@ -12,9 +12,31 @@
 	<!--[if IE 7]>
 	<link rel="stylesheet" type="text/css" href="css/styleIE7.css"/>
 	<![endif]-->
+	<script type="text/javascript" src="js/jquery_and_plugins.js"></script>
+	<script type="text/javascript" src="js/popover_forms.js"></script>
 </head>
 <body>
- 
+<div class='white_fon'>
+</div>
+<div class='popover_block user_callback'>
+	<img class='close-button' src='img/close.png' />
+	<div class='contacts-form'>		
+		<form>			
+			<legend>Заказать обратный звонок</legend>
+			<label for='user_fio'>ФИО<sup>*<sup></label>
+			<input id='user_fio' type='text' />
+			
+			<label for='phone'>Телефон<sup>*<sup></label>
+			<input id='phone' type='text' />
+			
+			<label for='message'>Комментарий</label>
+			<textarea id='message'>
+			</textarea>
+			<label>* обязательно для заполнения</label>
+			<button type="submit" class='right'>Заказать</button>
+		</form>
+	</div> 
+</div>  
 <div id="wrapper">
 	<div id="header">
 		<div class="left">
@@ -27,7 +49,7 @@
 					<input type="submit" value="Найти"/>
 				</form>
 			</div>
-			<div class="callLink">заказать звонок</div>
+			<div class="callLink" id='callback_request'>заказать звонок</div>
 			<a href="#0" class="email">info@etmkbl.com</a>
 		</div>
 		<div class="center">
